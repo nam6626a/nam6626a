@@ -1,0 +1,215 @@
+:root{
+    --primary-color:#b5e4f2;
+    --white-color: #fff;
+    --black-color:#000;
+    --text-color:#333;
+    --navbar-height: 52px;
+    --header-height: 120px;
+    --header-with-search: calc(var(--header-height) - var(--navbar-height));
+    --star-gold: #f5de12;
+}
+
+*{
+box-sizing: inherit;
+}
+html{
+font-size: 62,5%;
+line-height: 1.6em;
+font-family: 'Roboto', sans-serif; 
+box-sizing: border-box;
+}
+.header-admin{
+    background-image: url(../img/banner1.jpg);
+   padding-top: 30%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.nav-admin{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+ padding: 0;
+ margin: 0;
+ height: 100%;
+
+}
+.nav-admin li{
+    padding: 8px 0;
+    width: 100%;
+    margin: 8px 0 8px 12px;
+    text-align: start;
+    
+}
+.nav-admin li:nth-child(1){
+   
+}
+.nav-admin li a{
+    text-decoration: none;
+  color: #0905fa;
+    font-size: 18px;
+}
+.menu-admin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-image: linear-gradient(0 , #01a0fc, #060afd); */
+    height: 100vh;
+   
+}
+.search-admin{
+    margin-bottom: 16px;
+    border-radius: 16px;
+    margin-top: 16px;
+    padding: 16px 32px;
+    border: 1px solid #999;
+}
+.search-admin input{
+    outline: none;
+    padding: 4px 8px;
+}
+.slider{
+    padding-top: 10px;
+    width: 100%;
+}
+.handel-form{
+    margin: 0 16px;
+}
+.handel-form h1{
+    margin: 16px 0;
+    font-weight: 500;
+}
+.TB_DM tr th,td {
+    border: 1px solid #333;
+    padding: 4px;
+   text-align: center;
+    padding: 16px 24px;
+    flex: 2;
+}
+.TB_DM{
+    width: 100%;
+}
+.TB_DM tr{
+    display: flex;
+}
+.TB_DM tr td:nth-child(1){
+    text-align: center;
+    flex: 1 ;
+}
+.TB_DM tr th:nth-child(1){
+    flex: 1 ;
+}
+.TB_DM tr td a{
+    text-decoration: none;
+    color: red;
+}
+.TB_DM{
+    border-collapse:collapse ;
+}
+.btn-class{
+    margin-bottom: 16px;
+    padding:  8px;
+    border-radius: 9px;
+    border: 1px solid #999;
+}
+.btn-class a{
+    text-decoration: none;
+    color: rgb(0, 110, 255);
+}
+.btn-class a:hover{
+    color: red;
+}
+.img-product{
+    max-width: 100px;
+}
+.FormUDSP{
+    display: flex;
+    flex-wrap: wrap;
+}
+.FormUDSP input{
+    height: 25px;
+    margin: 0 5px;
+}
+.main{
+    height: 100%;
+}
+.form_productAdd{
+    display: grid;
+   grid-template-columns: 50% 50%;
+}
+.productAdd_info{
+   display: flex;
+   flex-direction: column;
+   margin-right: 8px;
+}
+.form_productAdd input{
+    height: 50px;
+    font-size: 16px;
+    margin: 16px 0;
+}
+.form_productAdd select{
+    height: 50px;
+    font-size: 16px;
+    margin: 16px 0;
+}
+.productAdd_descript{
+    display: flex;
+    flex-direction: column;
+    margin: 0 8px;
+}
+.active{
+    background-color: rgb(0, 135, 253);
+}
+.nav-admin-item.active > *{
+    color: white !important;
+}
+
+.nav-admin-item i{
+    margin: 0 16px;
+}
+.prev{
+    text-decoration: none;
+    color: #333;
+}
+.prev:hover{
+    color: red;
+}
+.form_categoryAdd{
+    margin-right: 8px;
+}
+.form_categoryAdd form{
+    display: flex;
+    flex-direction: column;
+}
+.form_categoryAdd form >input{
+    outline: none;
+    padding: 8px 8px;
+    font-size: 16px;
+}
+.header{
+    background-color: #020202;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header h2{
+   padding-left: 40px;
+    line-height: 50px;
+    color: white;
+    margin: 0;
+    font-weight: 500;
+}
+.header h2 span{
+    color: #05c1fa;
+}
+.header a{
+    text-decoration: none;
+    color: aliceblue;
+    padding-right: 30px;
+}
+.header a:hover {
+    color: red;
+}
