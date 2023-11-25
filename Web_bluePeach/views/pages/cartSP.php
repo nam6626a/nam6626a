@@ -63,7 +63,7 @@
                     <a href="">Tiếp tục mua hàng</a>
                     <div>
                         <h3>Tạm tính: <span>940.500</span></h3>
-                        <button> <a style="text-decoration: none; color: black; " href="checkout.html">Thanh toán ngay</a></button>
+                        <button> <a style="text-decoration: none; color: black; " href="checkout">Thanh toán ngay</a></button>
                     </div>
                  </div>
             </div>

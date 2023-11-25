@@ -42,7 +42,7 @@
                 Thêm vào giỏ hàng
             </button>
             <button>
-                <a style="text-decoration: none; color: white; " href="checkout.php">
+                <a style="text-decoration: none; color: white; " href="checkout">
                 Mua ngay <br> <p>Mua online giao hàng tận nhà </p>
             </a>
             </button>
