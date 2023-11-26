@@ -186,6 +186,6 @@ for(let i of pageActive){
     i.onclick = function () {
        let C = this.parentElement;
        let g = [].indexOf.call(C.children,this);
-       sessionStorage.setItem('at', g) = i
+       sessionStorage.setItem('at', g);
     }
 }
