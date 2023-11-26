@@ -20,7 +20,7 @@
     <input type="text" value="<?php echo $row['description'] ?>" name="description">
     <input id="doiImg"  type="file" placeholder="Ảnh" name="product_img">
     <input type="hidden" name="" value="<?php echo $row['product_img'] ?>">
-    <img id="Imgdoi" class="img-product" src="<?=dmn?>/public/img/<?php echo $row['product_img'] ?>" alt="">
+    <img id="Imgdoi" class="img-product" src="<?=dn?>/public/img/<?php echo $row['product_img'] ?>" alt="">
     <input type="submit" name="sua" value="Sửa">
 </form>
     <?php }?>

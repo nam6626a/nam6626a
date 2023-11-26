@@ -22,9 +22,9 @@
     <input type="submit" name="them" value="thêm">
 </form>
 
-<script src="<?=dmn?>/ckeditor1/ckeditor.js"></script>
+<script src="<?=dn?>/ckeditor1/ckeditor.js"></script>
 <script>
-   var exp = CKEDITOR.replace('descript',{filebrowserBrowseUrl: '<?=dmn?>/ckfinder/ckfinder.html',
+   var exp = CKEDITOR.replace('descript',{filebrowserBrowseUrl: '<?=dn?>/ckfinder/ckfinder.html',
     filebrowserUploadUrl: '/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
     filebrowserWindowWidth: '1000',
     filebrowserWindowHeight: '700'

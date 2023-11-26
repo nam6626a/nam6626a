@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="<?=dmn?>/public/css/style.css">
-   <link rel="stylesheet" href="<?=dmn?>/public/css/grid.css">
-   <link rel="stylesheet" href="<?=dmn?>/public/fontawesome-free-6.4.0-web/css/all.css">
+   <link rel="stylesheet" href="<?=dn?>/public/css/style.css">
+   <link rel="stylesheet" href="<?=dn?>/public/css/grid.css">
+   <link rel="stylesheet" href="<?=dn?>/public/fontawesome-free-6.4.0-web/css/all.css">
     <title>Document</title>
 </head>
 <body>
@@ -35,7 +35,7 @@
             </div>
         </div>
     </div>
-    <script src="<?=dmn?>/js/main.js">
+    <script src="<?=dn?>/js/main.js">
       
 </script>
 </body>

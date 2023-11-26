@@ -189,3 +189,18 @@ for(let i of pageActive){
        sessionStorage.setItem('at', g);
     }
 }
+for(let E of pageActive){
+    const AC = E.parentElement;
+    if(sessionStorage.getItem('at') === null){
+        AC.children[0].classList.add('pageActive');
+                                             }
+        else{
+                let x = AC.querySelector('.pageActive');
+        if(x != null){
+                x.classList.remove('pageActive')
+                    }
+            let p = AC.children[parseInt(sessionStorage.getItem('at'))];
+       
+            p.classList.add('pageActive');
+    }
+    }

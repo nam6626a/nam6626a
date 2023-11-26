@@ -178,7 +178,7 @@
                                    
                                     <?php }
                                      }?>
-                                      <script>
+<!-- <script>
                         let u = document.currentScript.parentElement;
                                 
                              if(sessionStorage.getItem('at') === null){
@@ -193,7 +193,7 @@
                                
                                     p.classList.add('pageActive');
             }
-    </script>
+</script> -->
                                       <i class="fa-solid fa-angle-right"></i>
                             </ul>
                         </div>

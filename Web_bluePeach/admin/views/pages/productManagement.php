@@ -28,7 +28,7 @@
                     <td><?php echo $row['price'] ?></td>
                     <td><?php echo $row['old_price'] ?></td>
                     <td><?php echo $row['description'] ?></td>
-                    <td><img class="img-product" src="<?=dmn?>/public/img/<?php echo $row['product_img'] ?>" alt=""></td>
+                    <td><img class="img-product" src="<?=dn?>/public/img/<?php echo $row['product_img'] ?>" alt=""></td>
                     <td><a href="UpdateProduct?product_id=<?php echo $row['product_id']; ?>">Sửa</a>, <a href="DelProduct?product_id=<?php echo $row['product_id']; ?>">Xóa</a></td>
                 </tr>
                 <?php } ?>
