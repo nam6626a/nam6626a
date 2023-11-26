@@ -12,7 +12,7 @@
     <div class="main">
         <div class="grid" >
             <div class="row">
-                <div class="l-12">
+                <div class="l-12 c-12 m-12">
         <?php 
     require_once("./views/blocks/header.php"); 
     ?>
