@@ -1569,3 +1569,35 @@ i.none{
 .modal-cart{
     padding: 16px;
 }
+.menu1{
+    display: flex;
+    list-style: none;
+}
+.menu1 a{
+    text-decoration: none;
+    display: block;
+    color: var(--text-color);
+    padding: 10px;
+}
+.menu1>li{
+    position: relative;
+}
+.menu1 >li:hover >ul{
+    display: block;
+}
+.menu1>li>ul{
+    list-style: none;
+    display: none;
+    position: absolute;
+    top:100%;
+}
+.modalCart{
+    position: fixed;
+    inset: 0 0 0 0;
+    border: 1px solid red;
+    width: 60vW;
+    height: 60vh;
+    z-index: 50;
+    background-color: #fff;
+    margin: auto;
+}

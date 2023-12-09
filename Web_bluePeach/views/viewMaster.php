@@ -46,21 +46,38 @@
 
 <script src="<?=dn?>/index.js"></script>
 <script>
-    function addToCart() {
-     
-        var product_img = $('.product_img').val;
-        var product_name = $('.product_name').val;
-        var price = $('.price').val;
-            // Sử dụng Ajax để gửi yêu cầu đến server
-            $.ajax({
-                url: '<?=dn?>/views/blocks/modal.php', // Đường dẫn đến file xử lý ở phía máy chủ
-                type: 'POST',
-                data: { productImg: product_img, prductName: product_name, price: price }, // Dữ liệu gửi đi
-                success: function(response) {
-                    // Hiển thị thông báo trả về từ máy chủ
-                    $('.Cart-add').html(response);
-                }
-            });
+    function addToCart(u) {
+        let Rq= new XMLHttpRequest();
+        Rq.addEventListener('readystatechange', function(){
+          if(Rq.readyState == 4){
+            let rs =Rq.response;
+            console.log(rs);
+            let show = document.createElement('div');
+            show.setAttribute('class', 'modalCart');
+            let x = document.body.querySelector('.modalCart')
+            if(x != null){
+                x.remove();
+            }
+            show.innerHTML= rs
+            document.body.append(show);
+
+          }
+        });
+        Rq.open('GET', "<?=dn?>/home/?addCart=" + u, true);
+        Rq.send(null);
+
+        // 
+        //     // Sử dụng Ajax để gửi yêu cầu đến server
+        //     $.ajax({
+        //         url: '<?=dn?>/views/blocks/modal.php', // Đường dẫn đến file xử lý ở phía máy chủ
+        //         type: 'POST',
+        //      , // Dữ liệu gửi đi
+        //         success: function(response) {
+        //             console.log(response)
+        //             // Hiển thị thông báo trả về từ máy chủ
+        //             $('.Cart-add').html(response);
+        //         }
+        //     });
         }
 </script>
 </body>

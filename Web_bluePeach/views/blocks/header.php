@@ -1,3 +1,8 @@
+<?php 
+    require_once('./models/Category_class.php');
+    $dt = new Category_class;
+    $result = $dt->GetDM();
+?>
 <div class="header"> 
         <div class="grid wide" >
             <div class="header-with-search">
@@ -151,7 +156,12 @@
     </div>
     <div class="footer-nav hide-on-moblie-tablet">
         <ul class="footer-nav-list">
-            <li class="foodter-list-item"><a href="home">Home</a></li>
+        <!-- <ul class="menu1"> -->
+            <?php
+             ($data['menu']->mn)() ;
+               
+             ?>
+            <!-- <li class="foodter-list-item"><a href="home">Home</a></li>
             <li class="foodter-list-item ">
                 <a href="#">Sản Phẩm</a>
                 <ul class="sub-list-item">
@@ -164,7 +174,7 @@
             <li class="foodter-list-item"><a href="">My Shopee</a></li>
             <li class="foodter-list-item"><a href="">Contact</a></li>
             <li class="foodter-list-item"><a href="">Về chúng tớ</a></li>
-            <li class="foodter-list-item"><a href="">More</a></li>
+            <li class="foodter-list-item"><a href="">More</a></li> -->
         </ul>
     </div>
     <div class="footer-nav-overlay"></div>

@@ -3,7 +3,6 @@ var modal = document.querySelector('.modal')
 var modalBody = document.querySelector('.modal__body')
 var modalOverlay = document.querySelector('.modal__overlay')
 var authForm = document.querySelector('.auth-form')
-var cartAdd = document.querySelectorAll('.btn-cartAdd')
 var modalCartAdd = document.querySelector('.Cart-add')
 function openRegister(){
     modal.classList.add('open');
@@ -42,9 +41,7 @@ for(const btns of back){
 }
 var tranform = document.querySelector('.switch1')
 var tranform2 = document.querySelector('.switch2')
-for(let i  of cartAdd){
-    i.addEventListener('click', openCart)
-}
+
 tranform.addEventListener('click', openLogin)
 tranform2.addEventListener('click',openRegister)
 modalOverlay.addEventListener('click',close)
@@ -182,25 +179,27 @@ for(let i of catgItemLink){
 // }
 var pageActive = document.querySelectorAll('.pagination-item__link')
 for(let i of pageActive){
-    console.log(i.parentElement)
     i.onclick = function () {
+        console.log(this);
        let C = this.parentElement;
        let g = [].indexOf.call(C.children,this);
-       sessionStorage.setItem('at', g);
+       sessionStorage.setItem('at', g)
+            
+      
     }
 }
 for(let E of pageActive){
-    const AC = E.parentElement;
-    if(sessionStorage.getItem('at') === null){
-        AC.children[0].classList.add('pageActive');
-                                             }
-        else{
-                let x = AC.querySelector('.pageActive');
-        if(x != null){
-                x.classList.remove('pageActive')
-                    }
-            let p = AC.children[parseInt(sessionStorage.getItem('at'))];
-       
-            p.classList.add('pageActive');
-    }
-    }
+const AC = E.parentElement;
+if(sessionStorage.getItem('at') === null){
+    AC.children[0].classList.add('pageActive');
+                                         }
+    else{
+            let x = AC.querySelector('.pageActive');
+    if(x != null){
+            x.classList.remove('pageActive')
+                }
+        let p = AC.children[parseInt(sessionStorage.getItem('at'))];
+   
+        p.classList.add('pageActive');
+}
+}

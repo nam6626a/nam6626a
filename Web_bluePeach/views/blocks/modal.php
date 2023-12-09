@@ -99,6 +99,8 @@ if(isset($_POST['addCart'])){
                 </div>
             </div>
     </div>
+
+    
     <div class="Cart-add">
         <div class="modal-cart">
         <div class="modal-cart-product" style="margin-bottom: 16px;">

@@ -133,13 +133,7 @@
                                         
                                     </a>
                                     <div class="product-origin">
-                                        <form action="">
-                                            <input type="hidden" class="product_id" name="product_id" value="<?php echo $dl['product_id'] ?>">
-                                            <input type="hidden" class="product_img" name="product_img" value="<?=dn?>/admin/public/img/<?php echo $dl['product_img']; ?>">
-                                            <input type="hidden" class="product_name" name="product_name" value="<?=dn?>/admin/public/img/<?php echo $dl['product_name']; ?>">
-                                            <input type="hidden" class="price" name="price" value="<?=dn?>/admin/public/img/<?php echo $dl['price']; ?>">
-                                        </form>
-                                        <button onclick="addToCart()" name="addCart" class="btn-cartAdd"> Thêm Vào Giỏ Hàng </button>
+                                        <button onclick="addToCart('<?php echo $dl['product_id'] ?>')" name="addCart" class="btn-cartAdd"> Thêm Vào Giỏ Hàng </button>
                                             </div>
                                     <div class="product-item-action">
                                                 <span class="product-item-like">
@@ -195,6 +189,7 @@
             }
 </script> -->
                                       <i class="fa-solid fa-angle-right"></i>
+        
                             </ul>
                         </div>
                     </div>
