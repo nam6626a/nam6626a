@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Nov 24, 2023 at 03:34 PM
+-- Generation Time: Dec 10, 2023 at 11:38 AM
 -- Server version: 8.0.30
 -- PHP Version: 8.1.10
 
@@ -30,25 +30,26 @@ SET time_zone = "+00:00";
 CREATE TABLE `category` (
   `category_id` int NOT NULL,
   `category_name` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-  `parent_id` int DEFAULT NULL
+  `parent_id` int DEFAULT NULL,
+  `route` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `category`
 --
 
-INSERT INTO `category` (`category_id`, `category_name`, `parent_id`) VALUES
-(14, 'Dây Chuyền', 21),
-(17, 'Lắc Tay', 21),
-(19, 'Khuyên Tai', 21),
-(20, 'Home', 0),
-(21, 'Sản Phẩm', 0),
-(22, 'My Shopee', 0),
-(23, 'Contact', 0),
-(24, 'Về Chúng Tớ', 0),
-(25, 'Khuyên Tai Vàng', 21),
-(26, 'Combo Quà Tặng', 21),
-(32, 'More', 0);
+INSERT INTO `category` (`category_id`, `category_name`, `parent_id`, `route`) VALUES
+(14, 'Dây Chuyền', 21, 'daychuyen'),
+(17, 'Lắc Tay', 21, 'lactay'),
+(19, 'Khuyên Tai', 21, 'khuyentai'),
+(20, 'Home', 0, 'home'),
+(21, 'Sản Phẩm', 0, ''),
+(22, 'My Shopee', 0, ''),
+(23, 'Contact', 0, ''),
+(24, 'Về Chúng Tớ', 0, ''),
+(25, 'Khuyên Tai Vàng', 21, ''),
+(26, 'Combo Quà Tặng', 21, 'Combo'),
+(32, 'More', 0, '');
 
 -- --------------------------------------------------------
 

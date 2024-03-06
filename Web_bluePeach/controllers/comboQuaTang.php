@@ -1,12 +1,16 @@
 <?php 
 class comboQuaTang extends controller{
     function default() {
-       $result = $this-> model('product_class');
+        $m = 0;
+       $result = $this-> model('Product_class');
        $category_name = 'Combo Quà Tặng';
        $DC = $result ->GetspByDM($category_name);
+       $M_menu = $this->model('Category_class');
+       $M_menu-> menu_g($m);
        $this-> view('viewMaster', [
         'page' => 'productCB',
-        'dl' => $DC
+        'dl' => $DC,
+        'menu' => $M_menu
        ]);
     }
 }

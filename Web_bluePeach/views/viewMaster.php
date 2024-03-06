@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="<?=dn?>/access/img/sp1.jpeg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
     <link rel="stylesheet" href="<?=dn?>/access/main.css">
     <link rel="stylesheet" href="<?=dn?>/access/base.css">
@@ -12,7 +13,7 @@
     <link rel="stylesheet" href="<?=dn?>/access/fontawesome-free-6.4.0-web/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap&subset=vietnamese" rel="stylesheet">
-    <title>Document</title>
+    <title>web_bluePeach</title>
 </head>
 <body>
 <div class="app ">

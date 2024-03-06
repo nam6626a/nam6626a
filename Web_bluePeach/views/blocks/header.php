@@ -13,7 +13,7 @@
                 <i class="fa-solid fa-bars"></i>
             </div>
                 <header class="header-logo">
-                    <img class="header-logo-img" alt="Logo" src="https://pos.nvncdn.net/1cdfdd-38070/store/20181210_NfSYjqRWuwFkURp6Lc8QAfdU.png">
+                    <img class="header-logo-img" alt="Logo" src="<?=dn?>/access/img/logo.png">
                 </header>
                 <div class="header-search">
                     

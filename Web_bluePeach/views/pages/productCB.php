@@ -1,4 +1,4 @@
-<div class="container KT">
+<div class="container CB">
         <div class="grid wide1" >
            
             <div class="row ">
@@ -7,7 +7,7 @@
                     <div class="col l-10 m-12 c-12 ">
                         <div class="home-filter hide-on-moblie-tablet">
                             <span class="home-filter-label">Bạn đang xem: </span>
-                            <h2 style="font-weight: 300; color: blue;">Khuyên Tai</h2>
+                            <h2 style="font-weight: 300; color: blue;">Combo Quà Tặng</h2>
                            
                             <div class="home-filter-page">
                                 <div class="select-input">
@@ -53,7 +53,7 @@
                                   
                                 foreach ($data['dl'] as $dl){ ?>
                                 <div class="col l-3 m-4 c-6">
-                                    <form action="./container.php" method="post">
+                                    <form action="" method="post">
                                     <a href="product?product_id=<?php echo $dl['product_id'] ?>" class="home-product-item">
                                         <div style="background-image: url(../admin/public/img/<?php echo $dl['product_img'] ?>);" class="product-item-img"> </div>
                                             <div class="product-content">
@@ -76,7 +76,7 @@
                                         </div>
                                     </a>
                                     <div class="product-origin">
-                                               <button type="submit" class="btn-cartAdd"> Thêm Vào Giỏ Hàng</button>
+                                               <button class="btn-cartAdd"> Thêm Vào Giỏ Hàng</button>
                                             </div>
                                             </form>
                                             <div class="product-item-action">
